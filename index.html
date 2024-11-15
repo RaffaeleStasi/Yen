@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/output.css" />
+    <script src="/assets/js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Base Tailwind</title>
+  </head>
+
+  <body>
+  <!-- titre h1 en dehors de la homme page -->
+    <h1 class="text-[2rem] text-center mt-[4.8rem] mb-[2.3rem] text-primary font-display md:text-[3.3rem] md:mt-[10rem] md:mb-[12.3rem] xl:mt-[2.3rem] xl:mb-[5.8rem]">Titre de la page</h1>
+    
+
+    
+  <!-- section pour la page mon parcours -->
+    <section class="mb-[4.8rem]  md:flex md:flex-col md:items-center xl:flex-row xl:items-start">
+      <figure class="md:w-[100%] md:max-w-[550px] xl:w-[50%]"><img class="justify-self-center md:w-[100%] object-cover xl:max-w-full h-auto" src="assets/images/yen.png" alt=""></figure>
+      <div class="md:max-w-[60%] md:flex md:flex-col items-center justify-center xl:items-start">
+        <h2 class="text-[2rem] border-primary border-[1px] rounded-sm text-center mt-[2.3rem] mb-[1.7rem] text-primary font-display md:pl-[1.9rem] md:pr-[1.9rem] md:text-[2rem] md:mb-[1.7rem] xl:mb-[2.3rem] xl:text-[2.5rem] md:w-fit md:mt-0">Titre2 homepage</h2>
+        <p class="text-[0.9rem] md:text-[1.1rem] py-[1.4rem] max-w-xl justify-self-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Excepturi dolores dignissimos error quia nemo deleniti praesentium 
+          vitae illo consequuntur corrupti at qui reprehenderit veritatis, modi 
+          numquam nisi velit repellendus. Perspiciatis!
+        </p>
+      </div>
+    </section>
+
+
+  <!-- section avec 2 bouton (mon parcours) -->
+    <section class="mb-[4.8rem]  flex flex-col items-center md:flex md:justify-around md:flex-row md:max-w-[723px] m-auto w-[100%]">
+      <!-- bouton surligner avec couleur de contrast -->
+      <button class="">Me contacter</button> 
+      <!-- bouton rouge -->
+      <button class="bg-light hover:bg-primary text-primary hover:text-light border-2 border-primary py-3 rounded-sm w-[60%] max-w-[200px] h-fit m-[2rem]">Mes Œuvres</button>  
+    </section>  
+
+
+  <!-- section texte annonce création -->
+  <section class="mb-[4.8rem] md:max-w-[723px] flex justify-center w-[100%] m-auto">
+    <p class="text-[0.9rem] xl:text-[1.1rem] py-[1.4rem] text-center">
+      En cas de coup de cœur, n’hésitez pas à <a class="text-teal underline hover:text-primary" href="">passer&nbsp;une&nbsp;commande&nbsp;personnalisée.</a>
+    </p>
+  </section>
+
+  <!-- section oeuvres page création une colone -->
+  <section>
+    <figure class="mb-[4.8rem] w-[80%] max-w-[500px] md:max-h-[434rem] md:w-auto flex justify-center  m-auto relative">
+      <img class="justify-self-center w-[100%] object-contain" src="assets/images/fox_girl.png" alt="">
+      <figcaption class="h-fit w-[calc(100%-1.5rem)] absolute right-0 top-0 truncate origin-bottom-right rotate-[-90deg] translate-x-[2rem]">
+        <h2 class="text-[1.1rem] font-display">Nom de l'oeuvre</h2>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- section oeuvres page création 2 colone -->
+  <section class="flex flex-row flex-wrap justify-around">
+    <!-- Conteneur de la première image -->
+    <figure class="flex flex-col items-center mb-[4.8rem] w-[40%] max-w-[600px] md:h-[434px] m-auto">
+      <img class=" h-full object-cover" src="assets/images/fox_girl.png" alt="">
+      <figcaption class="mt-2">
+        <h2 class="text-[1.1rem] font-display text-center">Nom de l'oeuvre</h2>
+      </figcaption>
+    </figure>
+
+    <!-- Conteneur de la deuxième image -->
+    <figure class="flex flex-col items-center mb-[4.8rem] w-[40%] max-w-[29.9rem] h-[434px] m-auto">
+      <img class=" h-full object-cover" src="assets/images/yen.png" alt="">
+      <figcaption class="mt-2">
+        <h2 class="text-[1.1rem] font-display text-center">Nom de l'oeuvre</h2>
+      </figcaption>
+    </figure>
+</section>
+
+
+<!-- nav filtre" -->
+<nav class="fixed right-0 top-[30%]">
+  <ul class="flex flex-col items-end bg-light">
+    <!-- si filtre actif mettre les class "text-slate border-slate" -->
+    <li><button class="mb-[1.1rem] pl-[0.6rem] py-[0.6rem] text-[0.9rem] text-center min-w-[110px] mb:text-[1.1rem] border-b-[1px] border-dark hover:text-primary hover:border-primary ">Afficher Tout</button></li>
+    <li><button class="mb-[1.1rem] pl-[0.6rem] pb-[0.6rem] text-[0.9rem] text-center min-w-[110px] mb:text-[1.1rem] border-b-[1px] border-dark hover:text-primary hover:border-primary ">Animaux</button></li>
+    <li><button class="mb-[1.1rem] pl-[0.6rem] pb-[0.6rem] text-[0.9rem] text-center min-w-[110px] mb:text-[1.1rem] border-b-[1px] border-dark hover:text-primary hover:border-primary ">Collabs</button></li>
+    <li><button class="mb-[1.1rem] pl-[0.6rem] pb-[0.6rem] text-[0.9rem] text-center min-w-[110px] mb:text-[1.1rem] border-b-[1px] border-dark hover:text-primary hover:border-primary ">Paysages</button></li>
+    <li><button class="mb-[1.1rem] pl-[0.6rem] pb-[0.6rem] text-[0.9rem] text-center min-w-[110px] mb:text-[1.1rem] border-b-[1px] border-dark hover:text-primary hover:border-primary ">Portraits</button></li>
+  </ul>
+</nav>
+
+<!--a faire -->
+<button class="fixed right-0 bottom-[30%]">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><title>nav-mobile</title>
+    <path d="M13.417 14.857h-11.703c-0.949 0-1.714-0.766-1.714-1.714v-11.429c0-0.949 0.766-1.714 1.714-1.714h11.703c0.949 0 1.714 0.766 1.714 1.714v11.429c0 0.949-0.766 1.714-1.714 1.714zM1.714 1.714v11.429s11.703 0 11.703 0v-11.429h-11.703zM1.714 0.857v0.857s0 0 0 0v-0.857z"></path>
+    <path d="M13.417 32h-11.703c-0.949 0-1.714-0.766-1.714-1.714v-11.429c0-0.949 0.766-1.714 1.714-1.714h11.703c0.949 0 1.714 0.766 1.714 1.714v11.429c0 0.949-0.766 1.714-1.714 1.714zM1.714 18.857v11.429s11.703 0 11.703 0v-11.429h-11.703zM1.714 18v0.857s0 0 0 0v-0.857z"></path>
+    <path d="M30.286 14.857h-11.703c-0.949 0-1.714-0.766-1.714-1.714v-11.429c0-0.949 0.766-1.714 1.714-1.714h11.703c0.949 0 1.714 0.766 1.714 1.714v11.429c0 0.949-0.766 1.714-1.714 1.714zM18.583 1.714v11.429s11.703 0 11.703 0v-11.429h-11.703zM18.583 0.857v0.857s0 0 0 0v-0.857z"></path>
+    <path d="M30.286 32h-11.703c-0.949 0-1.714-0.766-1.714-1.714v-11.429c0-0.949 0.766-1.714 1.714-1.714h11.703c0.949 0 1.714 0.766 1.714 1.714v11.429c0 0.949-0.766 1.714-1.714 1.714zM18.583 18.857v11.429s11.703 0 11.703 0v-11.429h-11.703zM18.583 18v0.857s0 0 0 0v-0.857z"></path>
+    </svg>
+</button>
+    
+  </body>
+</html>
